@@ -15,9 +15,9 @@ body{
 }
 div.content{
     background-color: white;
-    margin: 60px 5% 80px 5%;
-    padding: 0px 30px 30px 30px;
-    min-width: 350px;
+    margin: 20px 8px 20px 8px;
+    padding: 0px 8px 20px 8px;
+    /* min-width: 350px; */
     box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.2);
     overflow: visible;
 }
@@ -78,7 +78,7 @@ table.info{
     position: absolute; 
     bottom: 0px; 
     width: 100%; 
-    height: 80px;
+    height: 50px;
     background-color: #6c829dc0; 
     color: white;
 }
@@ -86,32 +86,32 @@ table.info th{
     text-align: center;
     vertical-align: bottom;
     padding-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
 }
 table.info td{
     text-align: center;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /***** Ingredientes and Instructions *****/
 
 div.col{
-    width: 45%;
+    width: 100%;
 }
 div.col h2{
     text-align: center;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     border-bottom: 5px solid #6c829d;
     padding-bottom: 5px;
 }
 div.col1{
+    font-size: 12px;
     display: inline-block;
-    margin-right: 10%;
 }
 div.col2{
-    float: right;
+    float: none;
 }
 div.ingredients p{
     text-align: center;
@@ -136,12 +136,65 @@ table.instructions p.number{
 table.instructions td.instruction_step{
     font-size: 14px;
     padding-left: 10px;
-    /* padding-top: 0px;
-    padding-bottom: 0px; */
 }
 table.instructions tr{
     height: 40px;
 }
 table.instructions td{
     vertical-align: top;
+}
+
+    /***** Responsive Design for desktop *****/
+
+
+@media only screen and (min-width: 768px) {
+
+    /***** Main container *****/
+
+    div.content{
+        margin: 60px 10% 80px 10%;
+        padding: 0px 30px 30px 30px;
+        min-width: 350px;
+    }
+
+    /***** Image and Table Info *****/
+
+    table.info{
+        height: 80px;
+    }
+    table.info th{
+        font-size: 16px;
+    }
+    table.info td{
+        font-size: 14px;
+    }    
+
+    /***** Ingredients and Instructions *****/
+
+    div.col{
+        width: 45%;
+    }
+    div.col h2{
+        font-size: 15px;
+    }
+    div.col1{
+        margin-right: 10%;
+    }
+    div.col2{
+        float: right;
+    }       
+}
+
+    /***** Responsive Design for very large screens *****/
+
+
+@media only screen and (min-width: 900px) {
+
+    /***** Main container *****/
+
+    div.content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 670px;
+    }
 }
