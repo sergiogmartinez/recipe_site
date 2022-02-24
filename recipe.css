@@ -136,11 +136,11 @@ table.instructions p.number{
 table.instructions td.instruction_step{
     font-size: 14px;
     padding-left: 10px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
 }
 table.instructions tr{
-    height: 30px;
+    height: 40px;
 }
 table.instructions td{
     vertical-align: top;
